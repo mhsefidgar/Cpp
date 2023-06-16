@@ -1,8 +1,5 @@
 
-
-
-
-Sure! Here's a cheatsheet for data storage in C++ with code examples and explanations:
+## C++ Data storage types
 
 1.  Variables: Variables are used to store values of different data types. They can be declared using the appropriate data type and an identifier. Here's an example:
 
