@@ -1,7 +1,7 @@
 
 ## C++ Data storage types
 
-1.  Variables: Variables are used to store values of different data types. They can be declared using the appropriate data type and an identifier. Here's an example:
+1.  **Variables**: Variables are used to store values of different data types. They can be declared using the appropriate data type and an identifier. Here's an example:
 
 
 ```
@@ -11,7 +11,7 @@ char grade = 'A'; // character variable
 bool isStudent = true; // boolean variable 
 ```
 
-2.  Arrays: Arrays allow storing multiple values of the same data type in a contiguous block of memory. They are declared using the data type followed by square brackets with the desired size. Here's an example:
+2.  **Arrays**: Arrays allow storing multiple values of the same data type in a contiguous block of memory. They are declared using the data type followed by square brackets with the desired size. Here's an example:
 
 
 ```
@@ -20,7 +20,7 @@ double values[3] = {1.5, 2.5, 3.5}; // double array
 char name[10] = "John"; // character array (string) 
 ```
 
-3.  Pointers: Pointers are variables that store memory addresses. They can be used to manipulate data indirectly. Pointers are declared using an asterisk (\*) followed by an identifier. Here's an example:
+3.  **Pointers**: Pointers are variables that store memory addresses. They can be used to manipulate data indirectly. Pointers are declared using an asterisk (\*) followed by an identifier. Here's an example:
 
 
 ```
@@ -30,7 +30,7 @@ int* ptr = &num; // pointer to an integer
 cout << *ptr; // Output: 10 (dereferencing the pointer) 
 ```
 
-4.  References: References provide an alternative name for an existing variable. They must be initialized when declared and cannot be changed to refer to another variable. Here's an example:
+4.  **References**: References provide an alternative name for an existing variable. They must be initialized when declared and cannot be changed to refer to another variable. Here's an example:
 
 
 ```
@@ -39,7 +39,7 @@ int& refAge = age; // reference to an integer
 cout << refAge; // Output: 30 
 ```
 
-5.  Structures: Structures allow grouping multiple variables under a single name. They are declared using the `struct` keyword. Here's an example:
+5.  **Structures**: Structures allow grouping multiple variables under a single name. They are declared using the `struct` keyword. Here's an example:
 
 
 ```
@@ -53,7 +53,7 @@ p1.name = "John";
 p1.age = 25; 
 ```
 
-6.  Classes: Classes are user-defined data types that encapsulate data and functions. They are declared using the `class` keyword. Here's a simplified example:
+6.  **Classes**: Classes are user-defined data types that encapsulate data and functions. They are declared using the `class` keyword. Here's a simplified example:
 
 
 ```
@@ -78,7 +78,7 @@ r.setDimensions(5, 3);
 int area = r.calculateArea(); // area = 15 
 ```
 
-7.  Dynamic Memory Allocation: Dynamic memory allocation allows you to allocate memory at runtime using the `new` keyword. This is useful when you need to create variables or arrays whose sizes are determined during program execution. Here's an example:
+7.  **Dynamic Memory Allocation**: Dynamic memory allocation allows you to allocate memory at runtime using the `new` keyword. This is useful when you need to create variables or arrays whose sizes are determined during program execution. Here's an example:
 
 
 ```
@@ -90,7 +90,7 @@ dynamicArray[1] = 20;
 delete[] dynamicArray; // free the allocated memory 
 ```
 
-8.  Standard Template Library (STL) Containers: STL containers provide ready-to-use data structures with built-in functionality. They are part of the Standard Library and include vectors, lists, maps, queues, stacks, etc. Here's an example using a vector:
+8.  **Standard Template Library (STL) Containers**: STL containers provide ready-to-use data structures with built-in functionality. They are part of the Standard Library and include vectors, lists, maps, queues, stacks, etc. Here's an example using a vector:
 
 
 ```
@@ -104,7 +104,7 @@ numbers.push_back(20);
 int value = numbers[0]; // value = 10 
 ```
 
-9.  Enumerations: Enumerations allow you to define a named set of values. They are useful when you have a fixed set of options or states. Here's an example:
+9.  **Enumerations**: Enumerations allow you to define a named set of values. They are useful when you have a fixed set of options or states. Here's an example:
 
 
 ```
@@ -117,14 +117,14 @@ enum Color {
 Color selectedColor = GREEN; 
 ```
 
-10.  Unions: Unions allow you to store different types of data in a single memory location. Only one member of the union can be active at a time. Here's an example:
+10.  **Unions**: Unions allow you to store different types of data in a single memory location. Only one member of the union can be active at a time. Here's an example:
 
 
 ```
 union Data {     int intValue;     float floatValue;     char charValue; };  Data data; data.intValue = 10; int value = data.intValue;
 ```
 
-11.  File Input/Output (I/O): C++ provides file I/O operations to read from and write to files. You can use the `ifstream` class to read from files and the `ofstream` class to write to files. Here's an example:
+11.  **File Input/Output (I/O)**: C++ provides file I/O operations to read from and write to files. You can use the `ifstream` class to read from files and the `ofstream` class to write to files. Here's an example:
 
 
 ```
@@ -148,7 +148,7 @@ if (inputFile.is_open()) {
 } 
 ```
 
-12.  Dynamic Arrays with `std::vector`: `std::vector` is a versatile container from the Standard Template Library (STL) that provides dynamic array functionality with additional features such as automatic resizing. Here's an example:
+12.  **Dynamic Arrays with `std::vector`**: `std::vector` is a versatile container from the Standard Template Library (STL) that provides dynamic array functionality with additional features such as automatic resizing. Here's an example:
 
 
 ```
@@ -162,7 +162,7 @@ dynamicArray.push_back(20);
 int value = dynamicArray[0]; // access elements by index 
 ```
 
-13.  Strings: C++ provides the `std::string` class for working with strings. It offers various methods for manipulating and accessing string data. Here's an example:
+13.  **Strings**: C++ provides the `std::string` class for working with strings. It offers various methods for manipulating and accessing string data. Here's an example:
 
 
 ```
@@ -175,7 +175,7 @@ char firstChar = message[0]; // access individual characters
 std::string substring = message.substr(7, 5); // extract a substring 
 ```
 
-14.  Bit Fields: Bit fields allow you to specify the number of bits to allocate for a member within a structure or class. They are useful when you need to conserve memory. Here's an example:
+14.  **Bit Fields**: Bit fields allow you to specify the number of bits to allocate for a member within a structure or class. They are useful when you need to conserve memory. Here's an example:
 
 
 ```
@@ -190,7 +190,7 @@ myFlags.isReady = 1;
 myFlags.isEnabled = 0; 
 ```
 
-15.  Enum Class: C++11 introduced enum classes, which provide strong type-safety and scoping for enumerations. Enum classes prevent implicit conversions and naming collisions. Here's an example:
+15.  **Enum Class**: C++11 introduced enum classes, which provide strong type-safety and scoping for enumerations. Enum classes prevent implicit conversions and naming collisions. Here's an example:
 
 
 ```
@@ -203,7 +203,7 @@ enum class Color {
 Color selectedColor = Color::GREEN; 
 ```
 
-16.  Type Aliases: Type aliases allow you to create alternative names for existing data types, improving code readability and maintainability. They are declared using the `using` keyword. Here's an example:
+16.  **Type Aliases**: Type aliases allow you to create alternative names for existing data types, improving code readability and maintainability. They are declared using the `using` keyword. Here's an example:
 
 
 ```
@@ -211,14 +211,14 @@ using EmployeeID = int;
 EmployeeID emp1 = 1234; 
 ```
 
-17.  Constants: Constants are variables whose values cannot be modified after initialization. You can declare them using the `const` keyword. Here's an example:
+17.  **Constants**: Constants are variables whose values cannot be modified after initialization. You can declare them using the `const` keyword. Here's an example:
 
 
 ```
 const int MAX_VALUE = 100; 
 ```
 
-18.  Static Variables: Static variables are variables that retain their values across function calls. They are initialized only once and preserve their values between invocations. Here's an example:
+18.  **Static Variables**: Static variables are variables that retain their values across function calls. They are initialized only once and preserve their values between invocations. Here's an example:
 
 
 ```
@@ -232,7 +232,7 @@ incrementCounter(); // Output: Counter: 1
 incrementCounter(); // Output: Counter: 2 
 ```
 
-19.  Constant Pointers: Constant pointers are pointers that cannot change the memory address they point to. The value at the memory location can still be modified. Here's an example:
+19.  **Constant Pointers**: Constant pointers are pointers that cannot change the memory address they point to. The value at the memory location can still be modified. Here's an example:
 
 
 ```
@@ -245,7 +245,7 @@ cout << *ptr; // Output: 20
 // ptr = nullptr; // Not allowed, cannot change the memory address 
 ```
 
-20.  Pointer to a Constant: A pointer to a constant is a pointer that can change the memory address it points to, but the value at that memory location is constant and cannot be modified. Here's an example:
+20.  **Pointer to a Constant**: A pointer to a constant is a pointer that can change the memory address it points to, but the value at that memory location is constant and cannot be modified. Here's an example:
 
 
 ```
@@ -258,7 +258,7 @@ value = 20; // Allowed, value is not constant
 cout << *ptr; // Output: 20 
 ```
 
-21.  `sizeof` Operator: The `sizeof` operator returns the size in bytes of a type or variable. It is commonly used to determine the memory size occupied by data. Here's an example:
+21.  **`sizeof` Operator**: The `sizeof` operator returns the size in bytes of a type or variable. It is commonly used to determine the memory size occupied by data. Here's an example:
 
 
 ```
@@ -269,7 +269,7 @@ int array[5];
 int sizeOfArray = sizeof(array); // sizeOfArray = 20 (bytes) 
 ```
 
-22.  Type Casting: Type casting allows you to convert one type to another. C++ provides two types of casting: implicit and explicit. Here's an example:
+22.  **Type Casting**: Type casting allows you to convert one type to another. C++ provides two types of casting: implicit and explicit. Here's an example:
 
 
 ```
@@ -283,7 +283,7 @@ double doubleValue = num; // implicit cast
 These additional data storage concepts in C++ expand your understanding of pointers, constant variables, operator usage, and type casting. They offer more flexibility and control over how data is stored, accessed, and manipulated in your programs.
 
 
-23.  Smart Pointers: Smart pointers are objects that act like pointers but provide automatic memory management. They help avoid memory leaks and deallocation errors. C++ provides three types of smart pointers: `std::unique_ptr`, `std::shared_ptr`, and `std::weak_ptr`. Here's an example:
+23.  **Smart Pointers**: Smart pointers are objects that act like pointers but provide automatic memory management. They help avoid memory leaks and deallocation errors. C++ provides three types of smart pointers: `std::unique_ptr`, `std::shared_ptr`, and `std::weak_ptr`. Here's an example:
 
 
 ```
@@ -296,7 +296,7 @@ std::shared_ptr<int> sharedPtr = std::make_shared<int>(20); // shared_ptr
 std::weak_ptr<int> weakPtr = sharedPtr; // weak_ptr 
 ```
 
-24.  `const` Qualifier: The `const` qualifier can be used to make variables, function parameters, and member functions immutable, preventing modifications to their values. Here's an example:
+24.  **`const` Qualifier**: The `const` qualifier can be used to make variables, function parameters, and member functions immutable, preventing modifications to their values. Here's an example:
 
 
 ```
@@ -319,7 +319,7 @@ private:
 }; 
 ```
 
-25.  Namespaces: Namespaces allow you to organize code into separate logical groups to avoid naming conflicts. They provide a scope for identifiers. Here's an example:
+25.  **Namespaces**: Namespaces allow you to organize code into separate logical groups to avoid naming conflicts. They provide a scope for identifiers. Here's an example:
 
 
 ```
@@ -332,7 +332,7 @@ namespace Math {
 int result = Math::add(5, 3); // accessing the add() function from the Math namespace 
 ```
 
-26.  Typedef and using: Typedef and `using` allow you to create alternative names for existing types, including user-defined types. They improve code readability and maintainability. Here's an example:
+26.  **Typedef and using**: Typedef and `using` allow you to create alternative names for existing types, including user-defined types. They improve code readability and maintainability. Here's an example:
 
 
 ```
@@ -343,7 +343,7 @@ using PersonID = int; // using for int
 PersonID id = 1234; 
 ```
 
-27.  `constexpr`: The `constexpr` specifier indicates that an object or function can be evaluated at compile time. It allows the result to be used in contexts that require constant expressions. Here's an example:
+27.  **`constexpr`**: The `constexpr` specifier indicates that an object or function can be evaluated at compile time. It allows the result to be used in contexts that require constant expressions. Here's an example:
 
 
 ```
