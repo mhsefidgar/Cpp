@@ -5,7 +5,8 @@ Polymorphism is one of the fundamental concepts in object-oriented programming (
 
 1.  Polymorphism Overview: Polymorphism refers to the ability of objects of different types to be treated as objects of a common type. It allows for flexibility and extensibility in the design of software systems.
     
-2.  Types of Polymorphism: a. Compile-time Polymorphism (Static Polymorphism)
+2.  Types of Polymorphism: 
+    a. Compile-time Polymorphism (Static Polymorphism)
     
     *   Achieved through function overloading and operator overloading.
     *   Resolved at compile-time based on the type and number of arguments.
